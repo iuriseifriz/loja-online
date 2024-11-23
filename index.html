@@ -3,6 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Teko - Seu Ecommerce mais barato">
+    <meta name="keywords" content="ecommerce, barato, produtos, tecnologia, gadgets">
+    <meta property="og:title" content="Teko | Seu Ecommerce mais barato">
+    <meta property="og:description" content="Encontre os melhores produtos com os preços mais baixos!">
+    <meta property="og:image" content="img/thumbnail.jpg">
+    <meta property="og:url" content="https://www.teko.com.br">
+    <meta property="og:type" content="website">
+
     <title>Teko | Seu Ecommerce mais barato</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
@@ -18,27 +26,101 @@
             <li><a href="#">Sobre</a></li>
         </ul>
     </nav>
-    <section class="produtos">
+    
+    <main>         
         <h2>Nossos Produtos</h2>
-        <div class="produto">
-            <img src="img/prd1.png" alt="Produto 1">
-            <h3>Placa de Vídeo RTX 3060 Galax, 12GB GDDR6... </h3>
-            <h4>R$ 1.639,99</h4>
-            <button>Adicionar ao Carrinho</button>
-        </div>
-        <div class="produto">
-            <img src="img/prd2.png" alt="Produto 2">
-            <h3>Placa Mãe MSI A520M-A PRO, AMD AM4, DDR4</h3>
-            <h4>R$ 374,99</h4>
-            <button>Adicionar ao Carrinho</button>
-        </div>
-        <div class="produto">
-            <img src="img/prd3.png" alt="Produto 3">
-            <h3>Monitor Gamer Concórdia PCFort 23.8", Full HD, 1ms, HDMI, Pret...</h3>
-            <h4>R$ 599,99</h4>
-            <button>Adicionar ao Carrinho</button>
-        </div>
-    </section>
+        <section class="produtos">
+            <div class="produto">
+                <img src="img/prd1.png" alt="Produto 1">
+                <h3>Placa de Vídeo RTX 3060 Galax, 12GB GDDR6...</h3>
+                <h4>R$ 1.639,99</h4>
+                <button>Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <img src="img/prd2.png" alt="Produto 2">
+                <h3>Placa Mãe MSI A520M-A PRO, AMD AM4, DDR4</h3>
+                <h4>R$ 374,99</h4>
+                <button>Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <img src="img/prd3.png" alt="Produto 3">
+                <h3>Monitor Gamer Concórdia PCFort 23.8"</h3>
+                <h4>R$ 599,99</h4>
+                <button>Adicionar ao Carrinho</button>
+            </div>
+        </section>
+        
+        <section class="galeria">
+            <h2>Galeria de Produtos</h2>
+            <div class="grid-galeria">
+                <div class="item-galeria">
+                    <img src="img/1.jpg" alt="Produto 1">
+                    <p>Mini PC perfeito para a sua necessidade.</p>
+                </div>
+                <div class="item-galeria">
+                    <img src="img/2.jpg" alt="Produto 2">
+                    <p>Os melhores aparelhos de som.</p>
+                </div>
+                <div class="item-galeria">
+                    <img src="img/3.jpg" alt="Produto 3">
+                    <p>As principais marcas de telefones compatíveis com a sua empresa</p>
+                </div>
+                <div class="item-galeria">
+                    <img src="img/4.jpg" alt="Produto 4">
+                    <p>Mouses e periféricos com qualidade Logitech</p>
+                </div>
+                <div class="item-galeria">
+                    <img src="img/5.jpg" alt="Produto 5">
+                    <p>Os perfiféricos mais baratos do mercado.</p>
+                </div>
+                <div class="item-galeria">
+                    <img src="img/6.jpg" alt="Produto 6">
+                    <p>Tudo que você precisa para montar o seu estúdio.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="formulario">
+            <h2>Entre em Contato</h2>
+            <div class="form-container">
+                <form action="#" method="POST">
+                    <fieldset>
+                        <legend>Informações Pessoais</legend>
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required><br>
+
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required><br>
+
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" name="telefone" required><br>
+
+                        <label for="data">Data de Nascimento:</label>
+                        <input type="date" id="data" name="data"><br>
+                        
+                        <label for="Mensagem">Mensagem:</label>
+                        <input type="text" id="Mensagem" name="Mensagem" required><br>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Produto</legend>
+                        <label for="produto">Assunto:</label>
+                        <select id="produto" name="produto">
+                            <option value="Computador e perifericos">Computador e periféricos</option>
+                            <option value="Eletrpnicos em geral">Eletrônicos em geral</option>
+                            <option value="moveis e cadeiras">Móveis e Cadeiras</option>
+                        </select><br>
+
+                        <label for="valor">Valor (em caso de compra):</label>
+                        <input type="number" id="valor" name="valor" min="1" max="10000"><br>
+
+                        <button type="submit">Enviar</button>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+    </main>
+    
     <footer>
         <h5>&copy; 2024 Iuri Seifriz. Todos os direitos reservados.</h5>
     </footer>

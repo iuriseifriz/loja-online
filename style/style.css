@@ -164,3 +164,28 @@ footer {
         margin: 15px;
     }
 }
+
+.formulario-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 20px;
+}
+@media (min-width: 1000px) {
+    .formulario-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .imagem-formulario {
+        flex: 1;
+        max-width: 45%;
+        padding-right: 20px;
+    }
+
+    .form-container {
+        flex: 1;
+        max-width: 50%;
+    }
+}
